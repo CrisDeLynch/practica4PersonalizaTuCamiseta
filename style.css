@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(IMG/fondo.jpeg);
+    background-size: 100%;
+    cursor: url(IMG/cursor.png), auto;
+}
+
+/* Estilo del contenedor de todos los input*/
+.cuadroPrincipal {
+    width: 300px;
+    height: 80px;
+    background-color: rgba(193, 203, 203, 0.648);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+/* Estilos del área de la camiseta y sus componentes*/
+.camiseta-previsualizacion {
+    margin: 20px auto;
+    margin-left: -350px;
+    position: relative;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff62;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+/* Tamaño de la camiseta */
+.camiseta img {
+    width: 600px;
+}
+
+
+/* Estilo del texto que se introduce en la camiseta */
+
+.texto-camiseta {
+    position: absolute;
+    left: 220px;
+    top: 130px;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: Lobster;
+    color: black;
+}
+
+/* Imágenes disponibles en la galería */
+
+.imagenes-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    float: left;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff58;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagenes-galeria img {
+    width: 100px;
+    height: 150px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagenes-galeria img:hover {
+    transform: scale(1.1); 
+}
+
+
+/* Imágenes del interior de la camiseta + texto del nombre del personaje*/
+
+#imagenPecho img {
+    position: absolute;
+    width: 60px;
+    height: 90px;
+    right: 200px;
+    top: 150px;
+    transform: scaleX(-1);
+}
+
+#imagenCentro img {
+    position: absolute;
+    width: 130px;
+    height: 200px;
+    left: 310px;
+    top: 380px;
+    transform: translate(-50%, -50%);
+}
+
+#texto {
+    position: absolute;
+    left: 310px;
+    top: 480px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+

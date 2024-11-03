@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseña tu camiseta</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="cuadroPrincipal">
+        <label>Texto:</label>
+        <input type="text" id="textoCamiseta"><br>
+
+        <label>Posición X:</label>
+        <input type="range" id="posX" min="30" max="50" value="0"><br>
+
+        <label>Posición Y:</label>
+        <input type="range" id="posY" min="20" max="40" value="0"><br>
+
+        <input type="radio" class="colorCamiseta" name="color" value="blanco" checked>Blanca
+        <input type="radio" class="colorCamiseta" name="color" value="negro">Negra
+
+    </div>
+
+    <div class="imagenes-galeria">
+        <img src="IMG/Ellie.png" alt="ELLIE">
+        <img src="IMG/Joel.webp" alt="JOEL" >
+        <img src="IMG/Tommy.png" alt="TOMMY">
+        <img src="IMG/Abby.webp" alt="ABBY">
+        <img src="IMG/Dina.webp" alt="DINA">
+        <img src="IMG/Jesse.webp" alt="JESSE">
+    </div>
+
+
+    <div class="camiseta-previsualizacion">
+        <div id="contenedorCamiseta" class="camiseta">
+            <img id="imagenCamiseta" src="white.png">
+            <div id="imagenCentro"></div>
+            <div id="imagenPecho"></div>
+            <p id="texto"></p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
